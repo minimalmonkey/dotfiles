@@ -1,0 +1,12 @@
+# Create a new directory and enter it
+function mk() {
+  mkdir -p "$@" && cd "$@"
+}
+
+function dev() {
+  if [[ $# -eq 1 ]]; then
+    cd $DEV/$1 && ll
+  else
+    cd $DEV && ll
+  fi
+}
