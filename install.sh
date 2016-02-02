@@ -1,5 +1,7 @@
 # Bunch of symlinks
 
+DOTFILES_DIR="$HOME/.dotfiles"
+
 ln -sfv "$DOTFILES_DIR/runcom/.bash_profile" ~
 # ln -sfv "$DOTFILES_DIR/runcom/.inputrc" ~
 # ln -sfv "$DOTFILES_DIR/runcom/.gemrc" ~
