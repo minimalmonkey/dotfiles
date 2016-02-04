@@ -15,3 +15,10 @@ do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
+
+# if a users has a .bash_rc file load it
+if [ -f "$HOME/.bash_rc" ]
+then
+    [ -f "$HOME/.bash_rc" ] && . "$HOME/.bash_rc"
+fi
+
